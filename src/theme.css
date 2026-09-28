@@ -1,0 +1,28 @@
+/*
+  THEME — the single place to change the whole site's color system.
+
+  These are placeholder "neutral" values on purpose — the brief is design
+  first, colors last. Swap the hex values below and every component
+  updates automatically (nothing is hardcoded in components).
+
+  --color-background   page background
+  --color-foreground   primary text / ink
+  --color-primary      buttons, primary CTAs, active states
+  --color-secondary    surfaces that sit on top of background (cards on
+                        background use --color-surface instead)
+  --color-muted        secondary text (descriptions, captions)
+  --color-accent       sparingly-used highlight (links, active nav, tags)
+  --color-border       hairlines, dividers, card borders
+  --color-surface      card / panel background
+*/
+
+:root {
+  --color-background: #FAFAFA;
+  --color-foreground: #1A1A1A;
+  --color-primary: #1A1A1A;
+  --color-secondary: #FAFAFA;
+  --color-muted: #666666;
+  --color-accent: #1A1A1A;
+  --color-border: #E5E5E5;
+  --color-surface: #FFFFFF;
+}
