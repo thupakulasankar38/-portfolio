@@ -7,7 +7,7 @@ export default function Skills() {
   const track = [...marqueeSkills, ...marqueeSkills]
 
   return (
-    <section id="skills" className="section-shell overflow-hidden py-10 sm:py-12">
+    <section id="skills" className="section-shell overflow-hidden py-24 sm:py-32">
       <div className="mx-auto max-w-shell px-6 sm:px-10">
         <SectionHeading label="Skills" heading="TOOLS & CAPABILITIES" />
       </div>
@@ -39,7 +39,7 @@ export default function Skills() {
                 {category.skills.map((skill) => (
                   <span
                     key={skill}
-                    className="rounded-full border border-line px-4 py-2 text-sm text-foreground transition-all duration-300 hover:-translate-y-0.5 hover:border-foreground"
+                    className="rounded-full border border-line bg-surface/30 backdrop-blur-sm px-4 py-2 text-sm text-foreground transition-all duration-300 hover:-translate-y-1 hover:border-accent hover:bg-accent/10 hover:text-accent shadow-sm"
                   >
                     {skill}
                   </span>

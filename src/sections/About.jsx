@@ -5,7 +5,7 @@ import { profile } from '../data/profile'
 
 export default function About() {
   return (
-    <section id="about" className="section-shell relative overflow-hidden py-10 sm:py-12">
+    <section id="about" className="section-shell relative overflow-hidden py-24 sm:py-32">
       <div className="mx-auto max-w-shell px-6 sm:px-10">
         <p className="mb-6 font-mono text-xs uppercase tracking-[0.18em] text-muted">About</p>
 

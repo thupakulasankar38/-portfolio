@@ -50,8 +50,8 @@ export default function CustomCursor() {
       className="pointer-events-none fixed left-0 top-0 z-[100] flex items-center justify-center rounded-full bg-foreground mix-blend-difference"
       style={{ x: springX, y: springY, translateX: '-50%', translateY: '-50%' }}
       animate={{
-        width: isView ? 76 : isHover ? 40 : 14,
-        height: isView ? 76 : isHover ? 40 : 14,
+        width: isView ? 64 : isHover ? 32 : 10,
+        height: isView ? 64 : isHover ? 32 : 10,
       }}
       transition={{ duration: 0.25, ease: [0.22, 1, 0.36, 1] }}
     >

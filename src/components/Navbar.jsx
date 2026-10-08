@@ -28,8 +28,13 @@ export default function Navbar() {
       }`}
     >
       <nav className="mx-auto flex max-w-shell items-center justify-between px-6 py-5 sm:px-10">
-        <a href="#home" data-cursor="hover" className="font-display text-base font-semibold tracking-tight">
-          {identity.logo}
+        <a href="#home" data-cursor="hover" className="flex items-center gap-3 font-display text-base font-semibold tracking-tight">
+          <img 
+            src="https://images-platform.99static.com/ky8wEq_DEdvfN0l2lmUSfuVYL0g=/0x0:2000x2000/500x500/top/smart/99designs-contests-attachments/107/107446/attachment_107446690"
+            alt="Logo"
+            className="h-9 w-auto rounded-md object-contain"
+          />
+          <span className="hidden sm:block">{identity.logo}</span>
         </a>
 
         <ul className="hidden items-center gap-10 md:flex">

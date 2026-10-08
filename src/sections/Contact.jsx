@@ -8,7 +8,7 @@ const ctaLines = ["LET'S", 'CREATE', 'SOMETHING.']
 
 export default function Contact() {
   return (
-    <section id="contact" className="section-shell relative overflow-hidden py-10 sm:py-12">
+    <section id="contact" className="section-shell relative overflow-hidden py-24 sm:py-32">
       <div className="pointer-events-none absolute left-1/2 top-0 h-[420px] w-[420px] -translate-x-1/2 rounded-full bg-accent/[0.06] blur-3xl" />
 
       <div className="relative mx-auto max-w-shell px-6 sm:px-10">
@@ -17,7 +17,7 @@ export default function Contact() {
         <a
           href={`mailto:${profile.email}`}
           data-cursor="hover"
-          className="group block font-display text-display-1 font-medium leading-[0.92] text-foreground"
+          className="group block font-display text-display-1 font-bold uppercase tracking-tight leading-[0.92] text-foreground"
         >
           {ctaLines.map((line, i) => (
             <AnimatedText key={line} as="span" text={line} className="block" delay={i * 0.08} />

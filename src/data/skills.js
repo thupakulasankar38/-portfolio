@@ -23,6 +23,6 @@ export const skillCategories = [
   },
   {
     title: 'Tools',
-    skills: ['VS CODE', 'GITHUB', 'POSTMAN', 'FIGMA'],
+    skills: ['VS CODE', 'GITHUB', 'POSTMAN', 'FIGMA', 'SWAGGER'],
   },
 ]

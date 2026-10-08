@@ -17,12 +17,12 @@
 */
 
 :root {
-  --color-background: #FAFAFA;
-  --color-foreground: #1A1A1A;
-  --color-primary: #1A1A1A;
-  --color-secondary: #FAFAFA;
-  --color-muted: #666666;
-  --color-accent: #1A1A1A;
-  --color-border: #E5E5E5;
-  --color-surface: #FFFFFF;
+  --color-background: #080808;
+  --color-foreground: #FAFAFA;
+  --color-primary: #FF5722;
+  --color-secondary: #121212;
+  --color-muted: #A1A1AA;
+  --color-accent: #FF5722;
+  --color-border: #27272A;
+  --color-surface: #1E1E24;
 }

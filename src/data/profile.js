@@ -12,9 +12,9 @@ export const profile = {
     'I focus on making user interfaces look sharp, run smoothly, and load quickly.'
   ],
   stats: [
-    { value: '0-8', label: 'Years Experience' },
-    { value: '05+', label: 'Projects Completed' },
-    { value: '05+', label: 'Happy Clients' },
+    { value: '8M+', label: 'Experience' },
+    { value: '5+', label: 'Projects Completed' },
+    { value: '5+', label: 'Happy Clients' },
   ],
   email: 'sankarthupakula101@gmail.com',
   phone: '9133846944',

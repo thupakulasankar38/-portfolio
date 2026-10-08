@@ -7,7 +7,7 @@ export default function Projects() {
   const featuredProjects = projects.filter((p) => p.layout !== 'editorial')
 
   return (
-    <section id="work" className="section-shell py-10 sm:py-12">
+    <section id="work" className="section-shell py-24 sm:py-32">
       <div className="mx-auto max-w-shell px-6 sm:px-10">
         <SectionHeading
           label="Selected Work"
@@ -15,14 +15,14 @@ export default function Projects() {
           description="A handful of projects that show different sides of how I work — from full builds to focused design collaborations."
         />
 
-        <div className="flex flex-col gap-12 sm:gap-16">
+        <div className="flex flex-col gap-24 sm:gap-32">
           {featuredProjects.map((project) => (
             <ProjectCard key={project.id} project={project} />
           ))}
         </div>
 
         {editorialProjects.length > 0 && (
-          <div className="mt-24 sm:mt-32">
+          <div className="mt-32 sm:mt-48">
             <p className="mb-2 font-mono text-xs uppercase tracking-[0.18em] text-muted">
               More
             </p>

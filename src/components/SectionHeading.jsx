@@ -16,7 +16,7 @@ export default function SectionHeading({ label, heading, description, align = 'l
       <AnimatedText
         as="h2"
         text={heading}
-        className="font-display text-display-2 font-medium text-foreground"
+        className="font-display text-display-2 font-bold uppercase tracking-tight text-foreground"
       />
       {description && (
         <motion.p

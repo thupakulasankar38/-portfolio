@@ -6,6 +6,6 @@ export const experience = [
     role: 'REACT DEVELOPER',
     company: 'VYNTRA NEXUS',
     description: 'Vyntra Nexus Private Limited is a digital marketing and IT solutions company helping brands grow through SEO, performance marketing, web & app development, ...',
-    tech: ['React', 'TypeScript', 'GraphQL'],
+    tech: ['React.js', 'JavaScript', 'Tailwind CSS'],
   },
 ]

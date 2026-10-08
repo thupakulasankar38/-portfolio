@@ -4,11 +4,17 @@ import { profile } from '../data/profile'
 
 export default function Footer() {
   return (
-    <footer className="relative overflow-hidden border-t border-line py-10 sm:py-12">
+    <footer className="relative overflow-hidden border-t border-line py-20 sm:py-24 mt-20">
       <div
-        className="pointer-events-none absolute -bottom-24 left-1/2 h-64 w-[140%] -translate-x-1/2 rounded-[50%] opacity-[0.35]"
-        style={{ background: 'radial-gradient(closest-side, var(--color-border), transparent)' }}
+        className="pointer-events-none absolute -bottom-24 left-1/2 h-64 w-[140%] -translate-x-1/2 rounded-[50%] opacity-[0.2]"
+        style={{ background: 'radial-gradient(closest-side, var(--color-accent), transparent)' }}
       />
+
+      <div className="relative mx-auto max-w-shell px-6 sm:px-10 mb-24 text-center">
+        <a href="#contact" data-cursor="hover" className="block font-display text-[clamp(2.5rem,10vw,9rem)] font-bold uppercase tracking-tighter leading-[0.85] text-foreground hover:text-accent transition-colors duration-500">
+          LET'S BUILD <br /> SOMETHING
+        </a>
+      </div>
 
       <div className="relative mx-auto max-w-shell px-6 sm:px-10">
         <div className="flex flex-col gap-10 sm:flex-row sm:items-start sm:justify-between">

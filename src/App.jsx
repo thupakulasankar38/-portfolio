@@ -5,12 +5,12 @@ import Navbar from './components/Navbar'
 import Hero from './sections/Hero'
 import { pageTransition } from './animations/animations'
 
-const Projects = React.lazy(() => import('./sections/Projects'))
-const About = React.lazy(() => import('./sections/About'))
-const Experience = React.lazy(() => import('./sections/Experience'))
-const Skills = React.lazy(() => import('./sections/Skills'))
-const Contact = React.lazy(() => import('./sections/Contact'))
-const Footer = React.lazy(() => import('./sections/Footer'))
+import Projects from './sections/Projects'
+import About from './sections/About'
+import Experience from './sections/Experience'
+import Skills from './sections/Skills'
+import Contact from './sections/Contact'
+import Footer from './sections/Footer'
 
 export default function App() {
   return (
@@ -25,17 +25,13 @@ export default function App() {
         <Navbar />
         <main>
           <Hero />
-          <Suspense fallback={<div className="min-h-[100vh]" />}>
-            <Projects />
-            <About />
-            <Experience />
-            <Skills />
-            <Contact />
-          </Suspense>
+          <Projects />
+          <About />
+          <Experience />
+          <Skills />
+          <Contact />
         </main>
-        <Suspense fallback={null}>
-          <Footer />
-        </Suspense>
+        <Footer />
       </motion.div>
     </>
   )

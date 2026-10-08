@@ -20,7 +20,7 @@ export default function Hero() {
         }}
       />
       {/* Background Gradient Glow */}
-      <div className="pointer-events-none absolute top-1/2 left-1/2 md:left-[75%] -translate-x-1/2 -translate-y-1/2 w-[300px] h-[300px] md:w-[700px] md:h-[700px] rounded-full bg-gradient-to-tr from-[#E5E5E5]/60 to-transparent blur-[100px]" />
+      <div className="pointer-events-none absolute top-1/2 left-1/2 md:left-[75%] -translate-x-1/2 -translate-y-1/2 w-[300px] h-[300px] md:w-[700px] md:h-[700px] rounded-full bg-gradient-to-tr from-accent/20 to-transparent blur-[120px]" />
 
       {/* Hero Image */}
       <motion.div
@@ -31,7 +31,7 @@ export default function Hero() {
       >
         <div className="relative w-[220px] lg:w-[320px]">
           {/* Image inner glow/backdrop */}
-          <div className="absolute inset-0 rounded-[3rem] bg-[#E5E5E5]/50 blur-3xl -z-10 opacity-60 animate-pulse" />
+          <div className="absolute inset-0 rounded-[3rem] bg-accent/20 blur-3xl -z-10 opacity-40 animate-pulse" />
           <motion.img
             src={shankarImg}
             alt={profile.nameLine1}
@@ -43,6 +43,19 @@ export default function Hero() {
       </motion.div>
 
       <div className="relative z-10 mx-auto w-full max-w-shell px-6 sm:px-10">
+        <motion.div
+          initial="hidden"
+          animate="visible"
+          variants={fadeIn}
+          className="mb-8 inline-flex items-center gap-2.5 rounded-full border border-line bg-surface/50 backdrop-blur-sm px-3 py-1.5"
+        >
+          <span className="relative flex h-2 w-2">
+            <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-accent opacity-75"></span>
+            <span className="relative inline-flex h-2 w-2 rounded-full bg-accent"></span>
+          </span>
+          <span className="font-mono text-[10.5px] font-medium uppercase tracking-[0.2em] text-foreground/80">Available for work</span>
+        </motion.div>
+        
         <motion.p
           initial="hidden"
           animate="visible"
@@ -52,7 +65,7 @@ export default function Hero() {
           {profile.label}
         </motion.p>
 
-        <h1 className="font-display text-display-1 font-medium text-foreground">
+        <h1 className="font-display text-display-1 font-bold uppercase tracking-tight text-foreground">
           <AnimatedText as="span" text={profile.nameLine1} className="block" />
           <AnimatedText as="span" text={profile.nameLine2} className="block" delay={0.08} />
         </h1>
@@ -63,7 +76,7 @@ export default function Hero() {
             animate="visible"
             variants={fadeUp}
             transition={{ delay: 0.5 }}
-            className="font-display text-xl text-muted sm:text-2xl"
+            className="w-fit font-display text-xl sm:text-2xl text-transparent bg-clip-text bg-gradient-to-r from-accent to-accent/50"
           >
             {profile.role}
           </motion.p>
@@ -86,6 +99,9 @@ export default function Hero() {
         >
           <Button as="a" href="#work" variant="primary">
             View Work
+          </Button>
+          <Button as="a" href="/Shankar_Frontend_Developer_Resume (2) (1).docx" download variant="outline" showArrow={false}>
+            Download Resume
           </Button>
           <Button as="a" href="#contact" variant="outline" showArrow={false}>
             Contact
